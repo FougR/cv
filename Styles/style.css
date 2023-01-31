@@ -140,6 +140,10 @@ header{
     margin-bottom: 3vh;
 }
 
+.link_styled{
+    text-decoration: underline var(--cta-color) 2px;
+}
+
 main .button_container{
     display: inline-flex;
     flex-direction: column;
@@ -276,10 +280,6 @@ engagement et celui de l'accueil car le titre est plus grand
         background-color: transparent;
         outline: 0;
         position: relative;
-    }
-
-    .link_styled{
-        text-decoration: underline var(--cta-color) 2px;
     }
 
     .button:after{
