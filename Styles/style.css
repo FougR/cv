@@ -199,8 +199,7 @@ engagement et celui de l'accueil car le titre est plus grand
 
 /* Social links */
 .social_links{
-    position: fixed;
-    bottom: 5vh;
+    margin-top: 5vh;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -261,7 +260,7 @@ engagement et celui de l'accueil car le titre est plus grand
         margin: 0 10vw;
     }
 
-    .main_title, .main_text, .button, .deadline_container{
+    .main_title, .main_text, .button, .deadline_container, .social_links a{
         opacity: 0;
     }
 
@@ -277,6 +276,10 @@ engagement et celui de l'accueil car le titre est plus grand
         background-color: transparent;
         outline: 0;
         position: relative;
+    }
+
+    .link_styled{
+        text-decoration: underline var(--cta-color) 2px;
     }
 
     .button:after{
@@ -311,6 +314,8 @@ engagement et celui de l'accueil car le titre est plus grand
     /* Social Links */
 
     .social_links{
+        position: fixed;
+        bottom: 5vh;
         display: inline;
         left: 0;
         z-index: 4;

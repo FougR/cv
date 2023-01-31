@@ -51,4 +51,24 @@ if(window.matchMedia("only screen and (min-width: 1024px)").matches === true){
     // apparition bouton engagement et convention
     tl.from("#button2", {x: -20, duration: 0.5}, 1.8)
     tl.to("#button2", {opacity: 1, duration: 0.5}, 1.8)
+
+    //apparition mail
+    tl.from("#mail", {x: -20, duration: 0.5}, 1.7)
+    tl.to("#mail", {opacity: 1, duration: 0.5}, 1.7)
+
+    //apparition linkedin
+    tl.from("#linkedin", {x: -20, duration: 0.5}, 1.8)
+    tl.to("#linkedin", {opacity: 1, duration: 0.5}, 1.8)
+
+    //apparition github
+    tl.from("#github", {x: -20, duration: 0.5}, 1.9)
+    tl.to("#github", {opacity: 1, duration: 0.5}, 1.9)
+
+    //apparition behance
+    tl.from("#behance", {x: -20, duration: 0.5}, 2)
+    tl.to("#behance", {opacity: 1, duration: 0.5}, 2)
+
+    //apparition dribble
+    tl.from("#dribble", {x: -20, duration: 0.5}, 2.1)
+    tl.to("#dribbble", {opacity: 1, duration: 0.5}, 2.1)
 };
