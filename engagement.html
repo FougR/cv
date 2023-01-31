@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luc-A</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><h3 class="logo">L-A <span class="highlighted">.</span></h3></a>
+            <ul class="nav_list" id="menu" visible="false" id="menu">
+                <li><a href="#" class="nav_link">Portfolio</a></li>
+                <li><a href="#" class="nav_link">Compétences</a></li>
+                <li><a href="engagement.html" class="nav_link">Engagement</a></li>
+            </ul>
+        </nav>
+
+        <i class="ri-menu-line" id="hamburger"></i>
+    </header>
+
+    <main class="main" id="engagement_main">
+        <img src="Images/caserne.jpg" alt="Centre d'Incendie et de Secours Le Pellerin" class="hero_img">
+        <section class="main_right">
+            <h1 class="main_title">Sapeur-pompier volontaire</h1>
+            <p class="main_text">
+                En engageant un sapeur-pompier volontaire, vous pouvez signer une convention entre vous et le SDIS. Elle permet de fixer 
+                le cadre de ma mise à disposition en m'autorisant certaines absences sur mon temps de travail et vous donne la possibilité de bénéficier 
+                de certains avantages.
+            </p>
+
+            <div class="deadline_container">
+                <h2 class="sous_texte">Sapeur-pompier dans :</h2>
+                <p id="deadline"></p>
+            </div>
+
+            <a href="https://www.sdis44.fr/sinformer/employeurs-de-sapeurs-pompiers-volontaires/" target="_blank" class="button" id="button2"> + d'infos sur la Convention</a>
+        </section>
+    </main>
+
+    <span class="left_border"></span>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Countdown Script -->
+    <script src="Scripts/deadline.js"></script>
+    <!-- Main Script -->
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
