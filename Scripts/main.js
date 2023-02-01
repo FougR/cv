@@ -33,12 +33,12 @@ if(window.matchMedia("only screen and (min-width: 1024px)").matches === true){
     tl.to("nav", {opacity: 1, duration: 0.5}, 0.8)
 
     // apparition titre
-    tl.from(".main_title", {x: -50, duration: 0.5}, 1.2)
-    tl.to(".main_title", {opacity: 1, duration: 0.5}, 1.2)
+    tl.from(".section_title", {x: -50, duration: 0.5}, 1.2)
+    tl.to(".section_title", {opacity: 1, duration: 0.5}, 1.2)
 
     // apparition paragraphe
-    tl.from(".main_text", {x: -50, duration: 0.5}, 1.4)
-    tl.to(".main_text", {opacity: 1, duration: 0.5}, 1.4)
+    tl.from(".section_text", {x: -50, duration: 0.5}, 1.4)
+    tl.to(".section_text", {opacity: 1, duration: 0.5}, 1.4)
 
     // apparition bouton compéténce
     tl.from("#button1", {x: -20, duration: 0.2}, 1.6)

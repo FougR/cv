@@ -112,7 +112,7 @@ header{
 
 
 /* Main Section Landing Page*/
-.main{
+.section{
     max-height: 90vh;
     padding: 0 10vw;
     display: flex;
@@ -120,7 +120,7 @@ header{
     align-items: center;
 }
 
-.main_right{
+.section_textbox{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,11 +132,11 @@ header{
     margin-bottom: 5vh;
 }
 
-.main_title{
+.section_title{
     margin-bottom: 3vh;
 }
 
-.main_text{
+.section_text{
     margin-bottom: 3vh;
 }
 
@@ -247,7 +247,7 @@ engagement et celui de l'accueil car le titre est plus grand
     }
 
     /* Main Section Landing Page */
-    .main, #engagement_main{
+    .section, #engagement_main{
         height: 90vh;
         width: 100vw;
         flex-direction: row;
@@ -260,11 +260,11 @@ engagement et celui de l'accueil car le titre est plus grand
         z-index: 4;
     }
 
-    main .main_right{
+    main .section_textbox{
         margin: 0 10vw;
     }
 
-    .main_title, .main_text, .button, .deadline_container, .social_links a{
+    .section_title, .section_text, .button, .deadline_container, .social_links a{
         opacity: 0;
     }
 
