@@ -19,6 +19,14 @@ hamburger.addEventListener('click', ()=>{
 
 // Détection ordi
 if(window.matchMedia("only screen and (min-width: 1024px)").matches === true){
+    // Récupération de la page sur laquelle on est
+    var page = location.href.split('/').pop('/');
+    
+    if(page === "portfolio.html"){
+        var left_border = document.getElementsByClassName("left_border");
+        left_border[0].style.height = "149vh";
+    }
+
     // on fait une détection d'ordi car one ne veux pas que gsap marche sur les téléphones
     
     //GSAP

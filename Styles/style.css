@@ -67,6 +67,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    z-index: 5;
 }
 
 .nav_list{
@@ -113,11 +114,14 @@ header{
 
 /* Main Section Landing Page*/
 .section{
+    position: relative;
     max-height: 90vh;
     padding: 0 10vw;
+    margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 4;
 }
 
 .section_textbox{
@@ -215,10 +219,41 @@ engagement et celui de l'accueil car le titre est plus grand
     font-size: 25px;
 }
 
+/* Etiquette */
+.project_etiquette{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.etiquette{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #e9d0af;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+
+.etiquette img{
+    height: 20px;
+    margin-right: 10px;
+}
+
 /* Laptop & Desktop */
 @media screen and (min-width: 1024px) {
     header{
+        position: static;
         justify-content: flex-end;
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 35%,
+            var(--bg-color) 35%,
+            var(--bg-color) 100%
+        );
     }
 
     nav{
@@ -247,8 +282,11 @@ engagement et celui de l'accueil car le titre est plus grand
     }
 
     /* Main Section Landing Page */
+    .single{
+        height: 80vh;
+    }
+
     .section, #engagement_main{
-        height: 90vh;
         width: 100vw;
         flex-direction: row;
         margin-left: 10vw;
@@ -305,7 +343,7 @@ engagement et celui de l'accueil car le titre est plus grand
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 35vw;
         background-color: var(--overlay-color);
         z-index: 3;
@@ -325,5 +363,10 @@ engagement et celui de l'accueil car le titre est plus grand
     .social_links a i{
         color: var(--bg-color);
         margin-right: 30px;
+    }
+
+    /* Portfolio */
+    #first_project{
+        margin-top: 20vh;
     }
 }
