@@ -18,7 +18,7 @@ hamburger.addEventListener('click', ()=>{
 })
 
 // Détection ordi
-if(window.matchMedia("only screen and (min-width: 1024px)").matches === true){
+if(window.matchMedia("only screen and (min-width: 1024px)").matches === true || page === "sdisProjet.html"){
     // Récupération de la page sur laquelle on est
     var page = location.href.split('/').pop('/');
     

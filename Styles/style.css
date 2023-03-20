@@ -242,6 +242,14 @@ engagement et celui de l'accueil car le titre est plus grand
     margin-right: 10px;
 }
 
+/* SDIS Projet */
+.lecteur_pdf{
+    position: relative;
+    width: 100vw;
+    height: 88vh;
+    z-index: 4;
+}
+
 /* Laptop & Desktop */
 @media screen and (min-width: 1024px) {
     header{
