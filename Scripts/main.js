@@ -24,7 +24,7 @@ if(window.matchMedia("only screen and (min-width: 1024px)").matches === true){
     
     if(page === "portfolio.html"){
         var left_border = document.getElementsByClassName("left_border");
-        left_border[0].style.height = "149vh";
+        left_border[0].style.height = "245vh";
     }
 
     // on fait une détection d'ordi car one ne veux pas que gsap marche sur les téléphones
